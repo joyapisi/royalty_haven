@@ -18,18 +18,39 @@ button, a { font: inherit; }
 .welcome { font-size: clamp(27px, 7vw, 36px); font-weight: 700; letter-spacing: -.8px; margin: 0; }
 .welcome-copy h1 { font-family: 'Allura', cursive; font-size: clamp(48px, 12vw, 68px); font-weight: 400; line-height: .92; margin: -2px 0 0; }
 .subheading { font-family: 'Playfair Display', Georgia, serif; font-size: 19px; margin: 8px 0 0; }
-.primary-button { display: flex; align-items: center; justify-content: center; justify-content: center; gap: 14px; background: #35afbd; color: #fff; border: 0; text-decoration: none; min-height: 20px; padding: 0 64px 0 30px; font-family: 'Playfair Display', Georgia, serif; font-size: 15px; box-shadow: 0 8px 24px rgba(0,0,0,.12); cursor: pointer; transition: background .2s, transform .2s; }
+.primary-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  background: #35afbd;
+  color: #fff;
+  border: 0;
+  min-height: 50px;
+  padding: 0 64px 0 30px;
+  cursor: pointer;
+}
 .primary-button:hover { background: #2699a8; transform: translateY(-1px); }
-.primary-button > span:first-of-type { font-family: Arial, sans-serif; font-size: 26px; line-height: 1; }
+/* .primary-button > span:first-of-type { font-family: Arial, sans-serif; font-size: 26px; line-height: 1; } */
 .explore-button { margin-top: clamp(100px, 22vh, 190px); }
-.button-mark { position: absolute; right: -1px; top: -11px; }
-.button-mark .brand-mark { width: 26px; height: 50px; background: rgba(30,158,172,.16); }
-.close-button { position: absolute; top: 12px; right: 13px; border: 1.5px solid #16b6c6; border-radius: 50%; background: white; color: #12a9b8; width: 27px; height: 27px; line-height: 21px; font-size: 23px; font-weight: 300; cursor: pointer; z-index: 1; }
+.button-mark {
+  position: absolute;
+  top: 50%;
+  right: -13px;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.button-mark .brand-mark {
+  width: 26px;
+  height: 50px;
+  background: rgba(30, 158, 172, .16);
+}
+.close-button { position: absolute; top: 12px; right: 13px; border: 1.5px solid #16b6c6; border-radius: 50%; background: white; color: #12a9b8; width: 27px; height: 27px; line-height: 21px; font-size: 23px; font-weight: 300; cursor: pointer; z-index: 20; }
 .guidelines-wrap {
-  height: 100svh;
-  min-height: 100svh;
-  overflow: hidden;
-  padding: 45px 18px 90px;
+  position: relative;
+  z-index: 10;
 }
 
 .guidelines-card {
@@ -39,6 +60,7 @@ button, a { font: inherit; }
   overscroll-behavior: contain;
   scrollbar-width: thin;
   position: relative;
+  z-index: 11;
   color: #152b2d;
   background: #fff;
   border-radius: 8px;
@@ -82,7 +104,10 @@ button, a { font: inherit; }
 .location-link { display: flex; align-items: center; justify-content: center; gap: 8px; width: fit-content; margin: 0 auto; padding: 11px 20px; background: #edf8f8; color: #147e89; border: 1px solid #9ad9dd; text-decoration: none; font-size: 13px; font-weight: 700; letter-spacing: .7px; }
 .location-link:hover { background: #dff2f3; }
 .location-arrow { font-size: 16px; }
-.whatsapp-button { margin-top: 24px; min-width: 230px; }
+.whatsapp-button {
+  margin-top: 24px;
+  font-family: 'DM Sans', sans-serif;
+}
 @media (min-width: 700px) {
   .hero { padding-top: 120px; }
   .guidelines-wrap { padding-top: 7vh; padding-bottom: 7vh; }
