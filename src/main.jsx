@@ -30,7 +30,7 @@ function App() {
 
   const whatsappHref = WHATSAPP_NUMBER
     ? `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Hello Royalty Haven, I would like to make an enquiry.')}`
-    : 'https://wa.me/';
+    : 'https://wa.me/+254715875715?text=Hello%20Royalty%20Haven%2C%20I%20would%20like%20to%20make%20an%20enquiry.';
 
   return (
     <main className={`site-shell ${page === 'guidelines' ? 'guidelines-page' : 'home-page'}`}>
