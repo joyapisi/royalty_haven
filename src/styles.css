@@ -9,25 +9,68 @@ button, a { font: inherit; }
 .photo-backdrop { position: fixed; inset: 0; z-index: -2; background-image: url('/images/royalty-haven-background.jpg'); background-size: cover; background-position: center center; transform: scale(1.015); }
 .shade { position: fixed; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(9,31,34,.36), rgba(8,28,31,.18) 48%, rgba(11,23,25,.38)); }
 .top-brand { position: absolute; top: 20px; right: max(7%, calc((100vw - 430px)/2 + 28px)); z-index: 2; }
-.brand-mark { width: 48px; height: 70px; border: 1.2px solid rgba(255,255,255,.9); border-radius: 28px 28px 0 0; color: white; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; padding-top: 7px; }
+.brand-mark { width: 28px; height: 50px; border: 1.2px solid rgba(255,255,255,.9); border-radius: 28px 28px 0 0; color: white; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; padding-top: 7px; }
 .brand-script { font-family: 'Allura', cursive; font-size: 22px; line-height: 1; }
-.brand-door { position: relative; display: block; width: 22px; height: 29px; margin-top: 2px; border: 1px solid rgba(255,255,255,.85); border-bottom: 0; }
+.brand-door { position: relative; display: block; width: 12px; height: 19px; margin-top: 2px; border: 1px solid rgba(255,255,255,.85); border-bottom: 0; }
 .brand-door i { position: absolute; width: 2px; height: 2px; background: white; right: 4px; bottom: 6px; }
 .hero { min-height: 100svh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 100px 22px 70px; }
 .welcome-copy { text-align: center; color: white; text-shadow: 0 2px 14px rgba(0,0,0,.3); margin-top: -5vh; }
 .welcome { font-size: clamp(27px, 7vw, 36px); font-weight: 700; letter-spacing: -.8px; margin: 0; }
 .welcome-copy h1 { font-family: 'Allura', cursive; font-size: clamp(48px, 12vw, 68px); font-weight: 400; line-height: .92; margin: -2px 0 0; }
 .subheading { font-family: 'Playfair Display', Georgia, serif; font-size: 19px; margin: 8px 0 0; }
-.primary-button { position: relative; display: inline-flex; align-items: center; justify-content: center; gap: 14px; background: #35afbd; color: #fff; border: 0; text-decoration: none; min-height: 50px; padding: 0 64px 0 30px; font-family: 'Playfair Display', Georgia, serif; font-size: 19px; box-shadow: 0 8px 24px rgba(0,0,0,.12); cursor: pointer; transition: background .2s, transform .2s; }
+.primary-button { display: flex; align-items: center; justify-content: center; justify-content: center; gap: 14px; background: #35afbd; color: #fff; border: 0; text-decoration: none; min-height: 20px; padding: 0 64px 0 30px; font-family: 'Playfair Display', Georgia, serif; font-size: 15px; box-shadow: 0 8px 24px rgba(0,0,0,.12); cursor: pointer; transition: background .2s, transform .2s; }
 .primary-button:hover { background: #2699a8; transform: translateY(-1px); }
 .primary-button > span:first-of-type { font-family: Arial, sans-serif; font-size: 26px; line-height: 1; }
 .explore-button { margin-top: clamp(100px, 22vh, 190px); }
-.button-mark { position: absolute; right: -7px; top: -11px; }
-.button-mark .brand-mark { width: 46px; height: 70px; background: rgba(30,158,172,.16); }
-.guidelines-wrap { min-height: 100svh; display: flex; flex-direction: column; align-items: center; padding: 54px 18px 34px; }
-.guidelines-card { position: relative; width: min(100%, 590px); background: rgba(255,255,255,.97); box-shadow: 0 14px 40px rgba(0,0,0,.2); margin: 0 auto; }
+.button-mark { position: absolute; right: -1px; top: -11px; }
+.button-mark .brand-mark { width: 26px; height: 50px; background: rgba(30,158,172,.16); }
 .close-button { position: absolute; top: 12px; right: 13px; border: 1.5px solid #16b6c6; border-radius: 50%; background: white; color: #12a9b8; width: 27px; height: 27px; line-height: 21px; font-size: 23px; font-weight: 300; cursor: pointer; z-index: 1; }
-.guidelines-content { padding: 54px 28px 24px; font-size: 13px; line-height: 1.58; }
+.guidelines-wrap {
+  height: 100svh;
+  min-height: 100svh;
+  overflow: hidden;
+  padding: 45px 18px 90px;
+}
+
+.guidelines-card {
+  width: min(100%, 590px);
+  max-height: calc(100svh - 110px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  position: relative;
+  color: #152b2d;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.12);
+  margin: 0 auto;
+}
+
+.guidelines-content {
+  padding-bottom: 35px;
+}
+.floating-booking-button {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  width: min(90%, 360px);
+  padding: 16px 20px;
+  background: #35afbd;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  box-shadow: 0 5px 20px rgba(0,0,0,.25);
+}
+
+.floating-booking-button:hover {
+  background: #2699a8;
+}
 .intro { font-weight: 700; margin: 0 36px 19px 0; }
 .rule { margin: 0 0 18px; }
 .rule h2 { font-size: 13px; font-weight: 600; line-height: 1.4; margin: 0 0 10px; }

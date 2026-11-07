@@ -5,7 +5,7 @@ import './styles.css';
 const LOCATION_URL = 'https://goo.gl/maps/QHGAUrWnVhq8rquk8';
 // Replace this with the accommodation's WhatsApp number, including country code, digits only.
 // Example Kenya format: 2547XXXXXXXX
-const WHATSAPP_NUMBER = '';
+const WHATSAPP_NUMBER = '254715875715';
 
 function BrandMark() {
   return <div className="brand-mark" aria-label="Royalty Haven">
@@ -33,6 +33,7 @@ function App() {
     : 'https://wa.me/+254715875715?text=Hello%20Royalty%20Haven%2C%20I%20would%20like%20to%20make%20an%20enquiry.';
 
   return (
+    
     <main className={`site-shell ${page === 'guidelines' ? 'guidelines-page' : 'home-page'}`}>
       <div className="photo-backdrop" />
       <div className="shade" />
@@ -53,8 +54,32 @@ function App() {
       ) : (
         <section className="guidelines-wrap">
           <article className="guidelines-card">
-            <button className="close-button" aria-label="Back to home" onClick={() => navigate('home')}>×</button>
-            <div className="guidelines-content">
+            <button
+  type="button"
+  className="close-button"
+  aria-label="Back to home"
+  onClick={() => {
+    window.history.replaceState(
+      null,
+      '',
+      window.location.pathname + window.location.search
+    );
+    setPage('home');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }}
+>
+  ×
+</button>
+            {/* <button className="close-button" aria-label="Back to home" onClick={() => navigate('home')}>×</button> */}
+            <a
+  className="floating-booking-button"
+  href={whatsappHref}
+  target="_blank"
+  rel="noreferrer"
+>
+  PROCEED TO BOOKING <span>›</span>
+</a>
+<div className="guidelines-content">
               <p className="intro">Before confirming your booking, kindly note our house guidelines:</p>
 
               <section className="rule">
@@ -107,12 +132,13 @@ function App() {
               <a className="location-link" href={LOCATION_URL} target="_blank" rel="noreferrer">
                 <span aria-hidden="true">📍</span> OUR LOCATION <span className="location-arrow" aria-hidden="true">↗</span>
               </a>
+               <a className="primary-button whatsapp-button" href={whatsappHref} target="_blank" rel="noreferrer">
+            WhatsApp Us <span aria-hidden="true">›</span><span className="button-mark"><BrandMark /></span>
+          </a>
             </div>
           </article>
 
-          <a className="primary-button whatsapp-button" href={whatsappHref} target="_blank" rel="noreferrer">
-            WhatsApp Us <span aria-hidden="true">›</span><span className="button-mark"><BrandMark /></span>
-          </a>
+         
         </section>
       )}
     </main>
