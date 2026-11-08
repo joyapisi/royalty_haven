@@ -55,7 +55,7 @@ button, a { font: inherit; }
 
 .guidelines-card {
   width: min(100%, 590px);
-  max-height: calc(100svh - 110px);
+  max-height: calc(100svh - 120px);
   overflow-y: auto;
   overscroll-behavior: contain;
   scrollbar-width: thin;
@@ -73,7 +73,7 @@ button, a { font: inherit; }
 }
 .floating-booking-button {
   position: fixed;
-  bottom: 20px;
+  bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 100;

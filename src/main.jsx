@@ -62,7 +62,7 @@ function App() {
             className="primary-button explore-button"
             onClick={() => navigate("guidelines")}
           >
-            Start Exploring
+            Book Your Stay
             <span aria-hidden="true">›</span>
             <span className="button-mark">
               <BrandMark />
@@ -89,14 +89,7 @@ function App() {
               ×
             </button>
             {/* <button className="close-button" aria-label="Back to home" onClick={() => navigate('home')}>×</button> */}
-            <a
-              className="floating-booking-button"
-              href={whatsappHref}
-              target="_blank"
-              rel="noreferrer"
-            >
-              PROCEED TO BOOKING <span>›</span>
-            </a>
+            
             <div className="guidelines-content">
               <p className="intro">
                 Before confirming your booking, kindly note our house
@@ -230,6 +223,14 @@ function App() {
               >
                 WhatsApp Us <span>↗</span>
               </a>
+              <a
+              className="floating-booking-button"
+              href={whatsappHref}
+              target="_blank"
+              rel="noreferrer"
+            >
+              PROCEED TO BOOKING <span>›</span>
+            </a>
             </div>
           </article>
         </section>
