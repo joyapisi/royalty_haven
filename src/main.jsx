@@ -112,7 +112,7 @@ function App() {
                   <strong>Prior Booking Required:</strong>To ensure a 
                   seamless check-in, please complete your reservation 
                   before arriving at Royalty Haven.
-                  
+                             
                   <strong>Balances & Payments:</strong> Please ensure full payment
                   or remaining balances are settled by 10:00 AM on 
                   your scheduled arrival day.
