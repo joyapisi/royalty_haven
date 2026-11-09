@@ -107,7 +107,7 @@ function App() {
               </section>
 
               <section className="rule">
-                <h2> 2. 🗓️ Reservations and Cancellations</h2>
+                <h2> 2. 🗓️ Reservations and Cancellations ❌</h2>
                 <p>
                   <strong>Prior Booking Required:</strong>To ensure a 
                   seamless check-in, please complete your reservation 
@@ -127,7 +127,7 @@ function App() {
               </section>
               
               <section className="rule">
-                <h2>🛏️ 2. Room Bookings &amp; Shared Spaces</h2>
+                <h2>🛏️ 3. Room Bookings &amp; Shared Spaces</h2>
                 <p>
                   The property has three ensuite bedrooms, a living room, and a
                   kitchen. Guests booking fewer than all three bedrooms should
@@ -139,7 +139,7 @@ function App() {
               </section>
 
               <section className="rule">
-                <h2>🕒 3. Check-in &amp; Check-out</h2>
+                <h2>🕒 4. Check-in &amp; Check-out</h2>
                 <p>
                   <strong>Check-in:</strong> From 2:00 PM.
                 </p>
@@ -149,7 +149,7 @@ function App() {
                 </p>
                 <p>
                   <strong>Late check-out:</strong> Departures after 10:00 AM
-                  mean the room is reserved for you for the next night and must
+                  means the room is reserved for you for the next night and must
                   therefore be paid for before or by 10:00 AM.
                 </p>
                 <p>
@@ -159,7 +159,7 @@ function App() {
               </section>
 
               <section className="rule">
-                <h2>🚭 4. No Smoking, Alcohol or Drugs</h2>
+                <h2>🚭 5. No Smoking, Alcohol or Drugs</h2>
                 <p>
                   Smoking, alcohol consumption, and the use or possession of
                   illegal drugs are strictly prohibited anywhere on the
@@ -169,7 +169,7 @@ function App() {
               </section>
 
               <section className="rule">
-                <h2>🤝 5. Respect &amp; Cleanliness</h2>
+                <h2>🤝 6. Respect &amp; Cleanliness</h2>
                 <p>
                   All guests are expected to maintain cleanliness, respect other
                   guests' privacy, keep noise at reasonable levels, and handle
@@ -180,7 +180,7 @@ function App() {
               </section>
 
               <section className="rule">
-                <h2>🙏 6. Booking Confirmation</h2>
+                <h2>🙏 7. Booking Confirmation</h2>
                 <p>
                   Please note that your booking confirms that you have read and
                   agreed to these rules.
@@ -188,7 +188,7 @@ function App() {
               </section>
 
               <section className="rule">
-                <h2>🔇 7. Noise Levels &amp; Quiet Hours</h2>
+                <h2>🔇 8. Noise Levels &amp; Quiet Hours</h2>
                 <p>
                   To maintain a peaceful, family-friendly environment, all
                   guests are expected to keep noise at considerate levels,
@@ -213,7 +213,7 @@ function App() {
               </section>
 
               <p className="checkin-note">
-                We request you to fill in a check-in form with your details to
+                We request that you fill in a check-in form with your details to
                 help us comply with Kenyan hospitality business rules.
               </p>
               <p className="closing">
