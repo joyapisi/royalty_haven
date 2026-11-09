@@ -109,12 +109,14 @@ function App() {
               <section className="rule">
                 <h2> 2. 🗓️ Reservations and Cancellations</h2>
                 <p>
-                  <strong>Prior Booking Required:</strong>strong> To ensure a 
+                  <strong>Prior Booking Required:</strong>To ensure a 
                   seamless check-in, please complete your reservation 
                   before arriving at Royalty Haven.
-                  <strong>Balances & Payment:</strong> Please ensure full payment
+                  
+                  <strong>Balances & Payments:</strong> Please ensure full payment
                   or remaining balances are settled by 10:00 AM on 
                   your scheduled arrival day.
+                  
                   <strong>Cancellations, Refunds & Rescheduling:</strong> While 
                   we operate on a <strong>strict no-refund policy</strong> for 
                   cancellations or booking changes, we understand plans change. 
